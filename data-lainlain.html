@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD - LAIN-LAIN</title>
+    <!-- <link rel="shortcut icon" href="favicon.svg" type="image/x-icon"> -->
+
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="assets/logo/icon-bri.png" />
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="assets/logo/icon-bri.png" />
+
+    <!-- plugins & libraries css -->
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/all.min.css">
+    <link rel="stylesheet" href="assets/vendor/slim-select/slimselect.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="src/output.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="ed-overlay group">
+        <div
+            class="fixed inset-0 z-[100] group-[.active]:bg-edblue/80 duration-[400ms] pointer-events-none group-[.active]:pointer-events-auto">
+        </div>
+    </div>
+
+    <!-- search -->
+    <div class="ed-search group">
+        <form action="#"
+            class="bg-white fixed z-[100] top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] h-[100px] md:h-[70px] xxs:h-[50px] w-[1224px] max-w-[95%] flex gap-[10px] rounded-full overflow-hidden px-[40px] xxs:px-[20px] pointer-events-none opacity-0 group-[.active]:pointer-events-auto group-[.active]:opacity-100 duration-[400ms]">
+            <input type="search" name="ed-search" placeholder="Search Here..."
+                class="bg-transparent w-full focus:outline-none">
+            <button class="text-[25px] md:text-[22px] xxs:text-[20px]"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+
+
+    <!-- sidebar -->
+    <div class="ed-sidebar">
+        <div
+            class="translate-x-[100%] transition-transform ease-linear duration-300 fixed right-0 w-full max-w-[25%] xl:max-w-[30%] lg:max-w-[40%] md:max-w-[50%] sm:max-w-[60%] xxs:max-w-full bg-white h-full z-[999] overflow-auto">
+            <!-- heading -->
+            <div class="ed-sidebar-heading p-[20px] lg:p-[20px] border-b border-edgray/20">
+                <div class="logo flex justify-between items-center">
+                    <a href="index.html"><img src="assets/img/logo-nav.png" alt="logo"></a>
+
+                    <button type="button"
+                        class="ed-sidebar-close-btn border border-edgray/20 w-[45px] aspect-square shrink-0 text-black text-[22px] rounded-full hover:text-edpurple"><i
+                            class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+
+            <!-- mobile menu -->
+            <div class="ed-header-nav-in-mobile"></div>
+        </div>
+    </div>
+
+
+    <!-- HEADER SECTION START -->
+    <header
+        class="absolute z-[99] top-0 inset-x-[100px] xxl:inset-x-[30px] xl:inset-x-0 bg-white rounded-bl-[10px] rounded-br-[10px]">
+        <!-- top header -->
+        <!-- bottom header -->
+        <div class="px-[30px] xxl:px-[15px] lg:px-[20px] py-[28px] lg:py-[18px] flex justify-between to-be-fixed">
+            <div class="logo xxs:max-w-[40%]"><a href="index.html"><img src="assets/img/logo-nav.png" alt="logo"
+                        class="logo"></a></div>
+
+            <div class="flex lg:items-center lg:gap-[60px] xxs:gap-[30px]">
+                <div class="flex items-center gap-[100px] xl:gap-[30px] lg:gap-y-0">
+                    <!-- nav -->
+                    <div class="ed-header-nav-container">
+                        <ul
+                            class="to-go-to-sidebar-in-mobile ed-header-nav flex lg:flex-col gap-x-[43px] xl:gap-x-[33px] font-kanit text-[17px] font-normal">
+                            <li class="has-sub-menu relative">
+                                <a href="index.html" role="button">Home</a>
+                            </li>
+                            <li><a href="index.html">Looker Studio</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center gap-x-[60px] xxs:gap-[30px]">
+                        <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/Eg45m072WoBNil-0zR7m3EQBrbng4Bwlx7qDOdwTItCcRA?e=UaZjmb"
+                            target="_blank" class="ed-btn to-go-to-sidebar-in-mobile lg:m-[20px]">Data Brisim</a>
+                    </div>
+                </div>
+
+                <!-- mobile menu button -->
+                <button type="button" class="ed-mobile-menu-open-btn hidden lg:inline-block text-edblue text-[18px]"><i
+                        class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+
+    <main>
+        <!-- BREADCRUMB SECTION START -->
+        <section
+            class="pt-[327px] xl:pt-[287px] lg:pt-[237px] sm:pt-[200px] xxs:pt-[180px] pb-[158px] xl:pb-[118px] lg:pb-[98px] sm:pb-[68px] xs:pb-[48px] text-center bg-[url('../assets/img/header-bg.png')] bg-no-repeat bg-cover bg-center relative z-[1] overflow-hidden before:absolute before:-z-[1] before:inset-0 before:bg-edblue/70 before:pointer-events-none">
+            <div class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]">
+                <h1 class="font-semibold text-[clamp(35px,6vw,56px)] text-white">LAIN-LAIN</h1>
+                <ul class="flex items-center justify-center gap-[10px] text-white">
+                    <li><a href="index.html" class="text-edyellow">Dashboard</a></li>
+                    <li><span class="text-[12px]"><i class="fa-solid fa-angle-double-right"></i></span></li>
+                    <li>Data Lain-lain</li>
+                </ul>
+            </div>
+
+            <div class="vectors">
+                <img src="assets/img/breadcrumb-vector-1.svg" alt="vector"
+                    class="absolute -z-[1] pointer-events-none bottom-[34px] left-0 xl:left-auto xl:right-[90%]">
+            </div>
+        </section>
+        <!-- BREADCRUMB SECTION END -->
+
+        <div class="py-[120px] xl:py-[80px] md:py-[60px]">
+            <div class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]">
+                <div class="flex gap-[30px] lg:gap-[20px] md:flex-col md:items-center">
+                    <!-- left sidebar -->
+                    <div
+                        class="right sticky md:static top-[140px] h-full max-w-full w-[370px] lg:w-[300px] shrink-0 space-y-[30px] md:space-y-[25px] bg-white rounded-[10px] p-[30px] xxs:px-[20px] pt-[20px] xxs:pt-[10px] shadow-[0_4px_30px_rgba(0,0,0,0.08)]">
+
+                        <!-- filter -->
+                        <div>
+                            <h4
+                                class="font-semibold text-[18px] text-black border-b border-[#dddddd] relative pb-[11px] before:content-normal before:absolute before:left-0 before:bottom-0 before:w-[50px] before:h-[2px] before:bg-edpurple">
+                                Filter By</h4>
+
+                            <!-- field filter -->
+                            <div class="border-b border-[#E3E3E3] pb-[24px]">
+                                <span class="font-medium text-[14px] text-edblue block pt-[18px] pb-[15px]">Field of
+                                    Departement</span>
+                                <form action="#" class="bg-[#f8f8f8] px-[15px]">
+                                    <select name="course category" id="courseFilter"
+                                        class="bg-transparent w-full py-[12px] focus:outline-none">
+                                        <option value="All">All</option>
+                                        <option value="IT">IT Departement</option>
+                                        <option value="Eco1">Ecosistem 1</option>
+                                        <!-- Tambahkan kategori lainnya jika diperlukan -->
+                                    </select>
+                                </form>
+                            </div>
+
+                            <!-- location filter -->
+                        </div>
+                    </div>
+
+                    <!-- right content -->
+                    <div class="left grow">
+                        <div class="grid grid-cols-2 md:grid-cols-2 xxs:grid-cols-1 gap-[30px] lg:gap-[20px]">
+
+                            <!-- Laporan User Brimo Daily -->
+                            <div class="ed-2-single-course mix simpanan border border-[#e5e5e5] rounded-[10px] p-[20px] group"
+                                data-category="IT">
+                                <!-- course image  -->
+                                <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                                    <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EkXDGGTKOMtDg5df1R5Ixw4Bar5Fb2viZAJ5-0aJOjr6PQ?e=7vENS8"
+                                        target="_blank">
+                                        <img src="assets/img/Data/Lain-lain/user-brimo.png" alt="Course Image"
+                                            class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                                    <span
+                                        class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                        <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                        <span class="txt">Daily</span>
+                                    </span>
+                                </div>
+
+                                <!-- course infos -->
+
+                                <!-- course title -->
+                                <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a
+                                        href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EkXDGGTKOMtDg5df1R5Ixw4Bar5Fb2viZAJ5-0aJOjr6PQ?e=7vENS8"
+                                        target="_blank" class="hover:text-edpurple">Laporan User Brimo Daily</a></h5>
+
+                                <!-- course stats -->
+                                <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                                    <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                        <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                        <span class="txt">Lain-lain</span>
+                                    </div>
+                                </div>
+
+                                <!-- course footer -->
+                                <div
+                                    class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                                    <!-- course author -->
+                                    <div class="flex items-center gap-[8px]">
+                                        <img src="assets/img/Dept/logo-it.png" alt="Course Author Image"
+                                            class="w-[34px] aspect-square object-cover">
+                                        <a class="hover:text-edpurple">IT Departement</a>
+                                    </div>
+
+                                    <!-- course rating -->
+                                </div>
+                            </div>
+
+                            <!-- Laporan User Brimo Monthly -->
+                            <div class="ed-2-single-course mix simpanan border border-[#e5e5e5] rounded-[10px] p-[20px] group"
+                                data-category="IT">
+                                <!-- course image  -->
+                                <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                                    <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EtYmWA3cy-REsyN2vFi-i9EBeoLRiYdYIfc888hCLcNmQA?e=kcbYVn"
+                                        target="_blank">
+                                        <img src="assets/img/Data/Lain-lain/user-brimo-montly.png" alt="Course Image"
+                                            class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                                    <span
+                                        class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                        <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                        <span class="txt">Monthly</span>
+                                    </span>
+                                </div>
+
+                                <!-- course infos -->
+
+                                <!-- course title -->
+                                <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a
+                                        href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EtYmWA3cy-REsyN2vFi-i9EBeoLRiYdYIfc888hCLcNmQA?e=kcbYVn"
+                                        target="_blank" class="hover:text-edpurple">⁠Laporan User Brimo Monthly</a></h5>
+
+                                <!-- course stats -->
+                                <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                                    <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                        <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                        <span class="txt">Lain-lain</span>
+                                    </div>
+                                </div>
+
+                                <!-- course footer -->
+                                <div
+                                    class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                                    <!-- course author -->
+                                    <div class="flex items-center gap-[8px]">
+                                        <img src="assets/img/Dept/logo-it.png" alt="Course Author Image"
+                                            class="w-[34px] aspect-square object-cover">
+                                        <a class="hover:text-edpurple">IT Departement</a>
+                                    </div>
+
+                                    <!-- course rating -->
+                                </div>
+                            </div>
+
+                            <!-- Laporan Open Date Tabungan dan Giro Weekly -->
+                            <div class="ed-2-single-course mix simpanan border border-[#e5e5e5] rounded-[10px] p-[20px] group"
+                                data-category="Eco1">
+                                <!-- course image  -->
+                                <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                                    <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EjJpfKy_b9dClDHMw1GlPE4BbgDziNMJCXJMdqJNj4pyaA?e=vsexa5"
+                                        target="_blank">
+                                        <img src="assets/img/Data/Lain-lain/open-date-tabungan-giro.png"
+                                            alt="Course Image"
+                                            class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                                    <span
+                                        class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                        <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                        <span class="txt">Weekly</span>
+                                    </span>
+                                </div>
+
+                                <!-- course infos -->
+
+                                <!-- course title -->
+                                <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a
+                                        href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EjJpfKy_b9dClDHMw1GlPE4BbgDziNMJCXJMdqJNj4pyaA?e=vsexa5"
+                                        target="_blank" class="hover:text-edpurple">Laporan Open Date Tabungan dan Giro
+                                        Weekly</a></h5>
+
+                                <!-- course stats -->
+                                <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                                    <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                        <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                        <span class="txt">Lain-lain</span>
+                                    </div>
+                                </div>
+
+                                <!-- course footer -->
+                                <div
+                                    class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                                    <!-- course author -->
+                                    <div class="flex items-center gap-[8px]">
+                                        <img src="assets/img/Dept/logo-eco1.png" alt="Course Author Image"
+                                            class="w-[34px] aspect-square object-cover">
+                                        <a class="hover:text-edpurple">Ecosystem 1</a>
+                                    </div>
+
+                                    <!-- course rating -->
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- pagination -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- js -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/fslightbox/fslightbox.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/accordion.js"></script>
+    <script src="assets/js/progress-bar.js"></script>
+    <script>
+        // JavaScript to filter courses based on selected category
+        const courseFilter = document.getElementById('courseFilter');
+        const courses = document.querySelectorAll('.ed-2-single-course');
+
+        courseFilter.addEventListener('change', function () {
+            const selectedCategory = this.value;
+
+            courses.forEach(course => {
+                const courseCategory = course.getAttribute('data-category');
+                if (selectedCategory === 'All' || courseCategory === selectedCategory) {
+                    course.style.display = 'block'; // Show the course
+                } else {
+                    course.style.display = 'none'; // Hide the course
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

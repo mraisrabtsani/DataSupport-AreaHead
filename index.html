@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Data - Region 7</title>
+    <!-- <link rel="shortcut icon" href="favicon.svg" type="image/x-icon"> -->
+
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="assets/logo/icon-bri.png" />
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="assets/logo/icon-bri.png" />
+    <!-- plugins & libraries css -->
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/all.min.css">
+    <link rel="stylesheet" href="assets/vendor/slim-select/slimselect.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="src/output.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="ed-overlay group">
+        <div
+            class="fixed inset-0 z-[100] group-[.active]:bg-edblue/80 duration-[400ms] pointer-events-none group-[.active]:pointer-events-auto">
+        </div>
+    </div>
+
+    <!-- search -->
+    <div class="ed-search group">
+        <form action="#"
+            class="bg-white fixed z-[100] top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] h-[100px] md:h-[70px] xxs:h-[50px] w-[1224px] max-w-[95%] flex gap-[10px] rounded-full overflow-hidden px-[40px] xxs:px-[20px] pointer-events-none opacity-0 group-[.active]:pointer-events-auto group-[.active]:opacity-100 duration-[400ms]">
+            <input type="search" name="ed-search" placeholder="Search Here..."
+                class="bg-transparent w-full focus:outline-none">
+            <button class="text-[25px] md:text-[22px] xxs:text-[20px]"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+
+
+    <!-- sidebar -->
+    <div class="ed-sidebar">
+        <div
+            class="translate-x-[100%] transition-transform ease-linear duration-300 fixed right-0 w-full max-w-[25%] xl:max-w-[30%] lg:max-w-[40%] md:max-w-[50%] sm:max-w-[60%] xxs:max-w-full bg-white h-full z-[999] overflow-auto">
+            <!-- heading -->
+            <div class="ed-sidebar-heading p-[20px] lg:p-[20px] border-b border-edgray/20">
+                <div class="logo flex justify-between items-center">
+                    <a href="index.html"><img src="assets/img/logo-nav.png" alt="logo"></a>
+
+                    <button type="button"
+                        class="ed-sidebar-close-btn border border-edgray/20 w-[45px] aspect-square shrink-0 text-black text-[22px] rounded-full hover:text-edpurple"><i
+                            class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+
+            <!-- mobile menu -->
+            <div class="ed-header-nav-in-mobile"></div>
+        </div>
+    </div>
+
+
+
+    <!-- HEADER SECTION END -->
+
+
+    <header
+        class="absolute z-[99] top-0 inset-x-[100px] xxl:inset-x-[30px] xl:inset-x-0 bg-white rounded-bl-[10px] rounded-br-[10px]">
+        <!-- top header -->
+        <!-- bottom header -->
+        <div class="px-[30px] xxl:px-[15px] lg:px-[20px] py-[28px] lg:py-[18px] flex justify-between to-be-fixed">
+            <div class="logo xxs:max-w-[40%]"><a href="index.html"><img src="assets/img/logo-nav.png" alt="logo"
+                    class="logo"></a></div>
+
+            <div class="flex lg:items-center lg:gap-[60px] xxs:gap-[30px]">
+                <div class="flex items-center gap-[100px] xl:gap-[30px] lg:gap-y-0">
+                    <!-- nav -->
+                    <div class="ed-header-nav-container">
+                        <ul
+                            class="to-go-to-sidebar-in-mobile ed-header-nav flex lg:flex-col gap-x-[43px] xl:gap-x-[33px] font-kanit text-[17px] font-normal">
+                            <li class="has-sub-menu relative">
+                                <a href="#home" role="button">Home</a>
+                            </li>
+                            <li><a href="#looker">Looker Studio</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center gap-x-[60px] xxs:gap-[30px]">
+                        <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/Eg45m072WoBNil-0zR7m3EQBrbng4Bwlx7qDOdwTItCcRA?e=UaZjmb" target="_blank" class="ed-btn to-go-to-sidebar-in-mobile lg:m-[20px]">Data Brisim</a>
+                    </div>
+                </div>
+
+                <!-- mobile menu button -->
+                <button type="button" class="ed-mobile-menu-open-btn hidden lg:inline-block text-edblue text-[18px]"><i
+                        class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- BANNER SECTION START -->
+        <section class="ed-2-banner bg-edoffwhite pt-[100px] pb-[100px] relative z-[1] overflow-hidden">
+            <!-- vector -->
+            <div id="home" ></div>
+        </section>
+        <!-- BANNER SECTION END -->
+
+
+        <!-- CATEGORIES SECTION START -->
+        <!-- CATEGORIES SECTION END -->
+
+        <!-- INSTRUCTORS SECTION START -->
+        <section class="bg-edoffwhite py-[120px] xl:py-[80px] md:py-[60px] relative z-[1] overflow-hidden">
+            <div class="mx-[19.7%] xxxl:mx-[14.7%] xxl:mx-[9.7%] xl:mx-[3.2%] md:mx-[15px]">
+                <!-- heading -->
+                <div class="text-center mb-[46px] lg:mb-[36px] md:mb-[26px]">
+                    <h2 class="ed-section-sub-title">Our Dashboard</h2>
+                    <h6 class="ed-section-title">Data Support IT Departement</h6>
+                </div>
+
+                <!-- instructor cards -->
+                <div class="grid grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 xxs:grid-cols-1 gap-[30px] md:gap-[15px]">
+                    <!-- SIMPANAN -->
+                    <div class="text-center group">
+                        <!-- img -->
+                        <div class="relative mb-[18px] overflow-hidden rounded-[12px]">
+                            <a href="data-simpanan.html">                            
+                                <img src="assets/img/Konten/simpanan.png" alt="instructor image"
+                                class="w-full aspect-[270/320] object-cover group-hover:scale-110">
+                            </a>
+
+                            <!-- socials -->
+                        </div>
+
+                        <!-- txt -->
+                        <div>
+                            <h6 class="font-semibold text-[18px] text-edblue mb-[12px]"><a href="data-simpanan.html"
+                                    class="hover:text-edyellow">SIMPANAN</a></h6>
+                            <span class="text-edgray">3 Report Data</span>
+                        </div>
+                    </div>
+
+                    <!-- PINJAMAN -->
+                    <div class="text-center group">
+                        <!-- img -->
+                        <div class="relative mb-[18px] overflow-hidden rounded-[12px]">
+                            <a href="data-pinjaman.html"> 
+                                <img src="assets/img/Konten/pinjaman.png" alt="instructor image"
+                                class="w-full aspect-[270/320] object-cover group-hover:scale-110">
+                            </a>
+                            
+                            <!-- socials -->
+                        </div>
+
+                        <!-- txt -->
+                        <div>
+                            <h6 class="font-semibold text-[18px] text-edblue mb-[12px]"><a href="data-pinjaman.html"
+                                    class="hover:text-edyellow">PINJAMAN</a></h6>
+                            <span class="text-edgray">16 Report Data</span>
+                        </div>
+                    </div>
+
+                    <!-- TRANSACTION -->
+                    <div class="text-center group">
+                        <!-- img -->
+                        <div class="relative mb-[18px] overflow-hidden rounded-[12px]">
+                            <a href="data-transaction.html"> 
+                            <img src="assets/img/Konten/transaction.png" alt="instructor image"
+                                class="w-full aspect-[270/320] object-cover group-hover:scale-110">
+                            </a>
+                            <!-- socials -->
+                        </div>
+
+                        <!-- txt -->
+                        <div>
+                            <h6 class="font-semibold text-[18px] text-edblue mb-[12px]"><a href="data-transaction.html"
+                                    class="hover:text-edyellow">TRANSACTION</a></h6>
+                            <span class="text-edgray">3 Report Data</span>
+                        </div>
+                    </div>
+
+                    <!-- LAIN-LAIN -->
+                    <div class="text-center group">
+                        <!-- img -->
+                        <div class="relative mb-[18px] overflow-hidden rounded-[12px]">
+                            <a href="data-lainlain.html"> 
+                            <img src="assets/img/Konten/lainlain.png" alt="instructor image"
+                                class="w-full aspect-[270/320] object-cover group-hover:scale-110">
+                            </a>
+                            <!-- socials -->
+                        </div>
+
+                        <!-- txt -->
+                        <div>
+                            <h6 class="font-semibold text-[18px] text-edblue mb-[12px]"><a href="data-lainlain.html"
+                                    class="hover:text-edyellow">LAIN-LAIN</a></h6>
+                            <span class="text-edgray">3 Report Data</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- vectors -->
+                <div class="lg:hidden">
+                    <img src="assets/img/admission-vector-2.svg" alt="vector"
+                        class="absolute -z-[1] bottom-[154px] right-[58px]">
+                    <img src="assets/img/instructor-vector.svg" alt="vector" class="absolute -z-[1] top-[120px] left-0">
+                </div>
+            </div>
+        </section>
+        <!-- INSTRUCTORS SECTION END -->
+
+        <!-- COURSES SECTION START -->
+        <section class="ed-2-courses py-[120px] xl:py-[80px] md:py-[60px]">
+            <div class="mx-[9.2%] xxxl:mx-[8.2%] xxl:mx-[3%]">
+                <!-- section heading -->
+                <div class="text-center mb-[21px]">
+                    <h6 class="ed-section-sub-title">Our Data</h6>
+                    <h2 class="ed-section-title">Data Support IT Departement</h2>
+                </div>
+
+                <div
+                    class="ed-2-courses-filter-navs flex flex-wrap justify-center gap-[10px] mb-[40px] xs:mb-[30px] pb-[30px] xs:pb-[20px] border-b border-[#002147]/15 mx-[200px] lg:mx-[100px] md:mx-[12px] *:border *:border-edpurple *:rounded-[6px] *:py-[5px] *:px-[10px] *:text-edpurple *:font-medium *:text-[14px]">
+                    <button class="hover:bg-edpurple hover:text-white" data-filter="all">All</button>
+                    <button class="hover:bg-edpurple hover:text-white" data-filter=".simpanan">Simpanan</button>
+                    <button class="hover:bg-edpurple hover:text-white" data-filter=".pinjaman">Pinjaman</button>
+                    <button class="hover:bg-edpurple hover:text-white" data-filter=".transaction">Transaction</button>
+                    <button class="hover:bg-edpurple hover:text-white" data-filter=".etc">Lain-lain</button>
+                </div>
+
+                <!-- course cards -->
+                <div
+                    class="ed-2-courses-container grid grid-cols-4 xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 gap-[30px] xxl:gap-[20px]">
+                    <!-- SIMPANAN -->
+                    <!-- Daily Report DPK Ritel Konsolidasi-->
+                    <div class="ed-2-single-course mix simpanan border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EjJ4FSW19ctBmWw78xPu9tEB37Ajhf8ittjATUjBFObwDw?e=aiaJhE" target="_blank"> 
+                            <img src="assets/img/Data/Simpanan/report-dpk-ritel.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"> </a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EjJ4FSW19ctBmWw78xPu9tEB37Ajhf8ittjATUjBFObwDw?e=aiaJhE" target="_blank"
+                                class="hover:text-edpurple">Daily Report DPK Ritel Konsolidasi</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">SIMPANAN</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div
+                            class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-all.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">Konsolidasi</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- DPK -->
+                    <div class="ed-2-single-course mix simpanan border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/ElDYAmY0aXdChb9ASokCjv8BN_4EYCQr2WgvoAKaEsBavA?e=tqz9JJ" target="_blank">
+                            <img src="assets/img/Data/Simpanan/dpk.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/ElDYAmY0aXdChb9ASokCjv8BN_4EYCQr2WgvoAKaEsBavA?e=tqz9JJ" target="_blank"
+                                class="hover:text-edpurple">Daily Dana Pihak Ketiga (DPK)</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Simpanan</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div
+                            class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-all.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">Konsolidasi</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- Daily Report DPK Ritel KCP -->
+                    <div class="ed-2-single-course mix simpanan border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/Eh02FKz980xAkJ0cWClzmv4BkEWmiIhacWKXPexQ-m2srg?e=d4cDPl" target="_blank">
+                            <img src="assets/img/Data/Simpanan/dpk-ritel-kcp.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"> </a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/Eh02FKz980xAkJ0cWClzmv4BkEWmiIhacWKXPexQ-m2srg?e=d4cDPl" target="_blank"
+                                class="hover:text-edpurple">Daily Report DPK Ritel KCP</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Simpanan</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div
+                            class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-all.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">Konsolidasi</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!--PINJAMAN-->
+                    <!-- Laporan Point to Point -->
+                    <div class="ed-2-single-course mix pinjaman border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/Em2vy4TgRcxChB8m6tNSmzYB4WTPcNNeuNBjIvICfhV_cQ?e=GgVeCq" target="_blank">
+                            <img src="assets/img/Data/Pinjaman/p2p.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/Em2vy4TgRcxChB8m6tNSmzYB4WTPcNNeuNBjIvICfhV_cQ?e=GgVeCq" target="_blank"
+                                class="hover:text-edpurple">Laporan Point to Point</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Pinjaman</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div
+                            class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-all.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">All Departement</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- Laporan DPK3 -->
+                    <div class="ed-2-single-course mix pinjaman border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EkAf59yjTdxChYox7UGMLDgB1WECt6nJA9Bcay6e9z-MCw?e=FbVLMp" target="_blank">
+                            <img src="assets/img/Data/Pinjaman/dpk3.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EkAf59yjTdxChYox7UGMLDgB1WECt6nJA9Bcay6e9z-MCw?e=FbVLMp" target="_blank"
+                                class="hover:text-edpurple">Laporan DPK3</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Pinjaman</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div
+                            class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-all.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">All Departement</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- Laporan Data Rekening Aktif (mature but not close) -->
+                    <div class="ed-2-single-course mix pinjaman border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EkPCvdfXtrNNj4MK0F9wppsBod8FCT7Z4LKz14_LoR2pyQ?e=i0gtBJ" target="_blank">
+                            <img src="assets/img/Data/Pinjaman/mature.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EkPCvdfXtrNNj4MK0F9wppsBod8FCT7Z4LKz14_LoR2pyQ?e=i0gtBJ" target="_blank"
+                                class="hover:text-edpurple">Laporan Data Rekening Aktif (Mature but not Close)</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Pinjaman</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div
+                            class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-cop.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">COP</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+                    
+                    <!-- Laporan Cashcall CKPN -->
+                    <div class="ed-2-single-course mix pinjaman border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/Etc-qZSNiu5InhH-SdOz81wBuc6T1-9c7Llk8Ig5FmooFw?e=FPLApQ" target="_blank">
+                            <img src="assets/img/Data/Pinjaman/ckpn.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/Etc-qZSNiu5InhH-SdOz81wBuc6T1-9c7Llk8Ig5FmooFw?e=FPLApQ" target="_blank"
+                                class="hover:text-edpurple">Laporan Cashcall CKPN</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Pinjaman</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div
+                            class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-cop.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">COP</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- Laporan Anomali SLIK -->
+                    <div class="ed-2-single-course mix pinjaman border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EgUfg-bf_9lLloHv4m9sP9MBnGHySiUasJzMbYOIr98d7w?e=ABnVEB" target="_blank">
+                            <img src="assets/img/Data/Pinjaman/slik.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EgUfg-bf_9lLloHv4m9sP9MBnGHySiUasJzMbYOIr98d7w?e=ABnVEB" target="_blank"
+                                class="hover:text-edpurple">Laporan Anomali SLIK</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Pinjaman</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div
+                            class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-cop.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">COP</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- Laporan Keragaan Kecil dan Menengah -->
+                    <div class="ed-2-single-course mix pinjaman border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EtSSH6aPpaBHnwChzi4dDooBauR-KOj-3Vq31lkq37JSTw?e=DaO1fE" target="_blank">
+                            <img src="assets/img/Data/Pinjaman/keragaan-small.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EtSSH6aPpaBHnwChzi4dDooBauR-KOj-3Vq31lkq37JSTw?e=DaO1fE" target="_blank"
+                                class="hover:text-edpurple">Laporan Keragaan Kecil dan Menengah</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Pinjaman</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-small.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">Small</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- Laporan Penyebab DPK Kredit Kecil, Kur, Menengah -->
+                    <div class="ed-2-single-course mix pinjaman border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/Ehm2WMXSP9FIvpT1Q-ga270Bk_0qsGhkdFCsjTU06gvW1g?e=cNp6O8" target="_blank">
+                            <img src="assets/img/Data/Pinjaman/dpk-kredit-small.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/Ehm2WMXSP9FIvpT1Q-ga270Bk_0qsGhkdFCsjTU06gvW1g?e=cNp6O8" target="_blank"
+                                class="hover:text-edpurple">Laporan Penyebab DPK Kredit Kecil, Kur, Menengah</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Pinjaman</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-small.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">Small</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- ⁠Laporan Nominatif Potensi Unflag -->
+                    <div class="ed-2-single-course mix pinjaman border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EsQZ0Q9p_GZDuIsCSzTnLqABbWeXIv6rVe_R7I-vawkDQg?e=6yapEz" target="_blank">
+                            <img src="assets/img/Data/Pinjaman/potensi-unflag.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EsQZ0Q9p_GZDuIsCSzTnLqABbWeXIv6rVe_R7I-vawkDQg?e=6yapEz" target="_blank"
+                                class="hover:text-edpurple">⁠Laporan Nominatif Potensi Unflag</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Pinjaman</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-small.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">Small</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- Laporan Progress Geser Billing Small -->
+                    <div class="ed-2-single-course mix pinjaman border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/Enan9oBrDNlKv7EzqbEYKfEBugBQQrLAjge48zF-z4xGdw?e=EInvTT" target="_blank">
+                            <img src="assets/img/Data/Pinjaman/billing-small.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/Enan9oBrDNlKv7EzqbEYKfEBugBQQrLAjge48zF-z4xGdw?e=EInvTT" target="_blank"
+                                class="hover:text-edpurple">Laporan Progress Geser Billing Small</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Pinjaman</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-small.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">Small</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- Laporan AGF Small -->
+                    <div class="ed-2-single-course mix pinjaman border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EliKmDGUsV1IoPoYgXty75QBe8jcMG0vxC9bknQJtf-Pkw?e=M0JD9O" target="_blank">
+                            <img src="assets/img/Data/Pinjaman/agf-small.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EliKmDGUsV1IoPoYgXty75QBe8jcMG0vxC9bknQJtf-Pkw?e=M0JD9O" target="_blank"
+                                class="hover:text-edpurple">Laporan AGF Small</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Pinjaman</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-small.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">Small</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- Laporan RTL Nominatif DPK Baru -->
+                    <div class="ed-2-single-course mix pinjaman border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/En5nJBYVIOhPrH6SWOGxpk0BmPIpe7ZeLnMQxLwq0Ogxpw?e=bc4ece" target="_blank">
+                            <img src="assets/img/Data/Pinjaman/rtl-dpk-baru.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/En5nJBYVIOhPrH6SWOGxpk0BmPIpe7ZeLnMQxLwq0Ogxpw?e=bc4ece" target="_blank"
+                                class="hover:text-edpurple">Laporan RTL Nominatif DPK Baru</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Pinjaman</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-small.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">Small</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- Laporan Nominatif Potensi NPL (DPK3) -->
+                    <div class="ed-2-single-course mix pinjaman border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/Ej2bk3-R3nlInb2qvERBZNABIzbiBFxSTbbpcqTOwh9AuQ?e=nF4Imr" target="_blank">
+                            <img src="assets/img/Data/Pinjaman/potensi-npl-dpk3.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"> </a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/Ej2bk3-R3nlInb2qvERBZNABIzbiBFxSTbbpcqTOwh9AuQ?e=nF4Imr" target="_blank"
+                                class="hover:text-edpurple">Laporan Nominatif Potensi NPL (DPK3)</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Pinjaman</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-small.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">Small</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- Laporan Keragaan Kredit Menengah -->
+                    <div class="ed-2-single-course mix pinjaman border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/ElMppzWHD_RFtPW-MnA24WkBpfJV0QkIUenvZfboDl66vQ?e=BeopT5" target="_blank">
+                            <img src="assets/img/Data/Pinjaman/kredit-menengah.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/ElMppzWHD_RFtPW-MnA24WkBpfJV0QkIUenvZfboDl66vQ?e=BeopT5" target="_blank"
+                                class="hover:text-edpurple">Laporan Keragaan Kredit Menengah</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Pinjaman</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-small.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">Small</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- ⁠Laporan Tabungan Small -->
+                    <div class="ed-2-single-course mix pinjaman border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EiR0s_n418BGnKhufN9s_B4B5gnSpgoS32LbojenCKS-Pg?e=hDXGpt" target="_blank">
+                            <img src="assets/img/Data/Pinjaman/tabungan-small.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EiR0s_n418BGnKhufN9s_B4B5gnSpgoS32LbojenCKS-Pg?e=hDXGpt" target="_blank"
+                                class="hover:text-edpurple">⁠Laporan Tabungan Small</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Pinjaman</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-small.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">Small</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- Daily Loan pinjaman -->
+                    <div class="ed-2-single-course mix pinjaman border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/Esy9npcSlCpKqRGbsWDfL2IBhiWVv_XhjsKVbscEvjuZTA?e=nnCplF" target="_blank">
+                            <img src="assets/img/Data/Pinjaman/loan-pinjaman.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/Esy9npcSlCpKqRGbsWDfL2IBhiWVv_XhjsKVbscEvjuZTA?e=nnCplF" target="_blank"
+                                class="hover:text-edpurple">Daily Loan pinjaman</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Pinjaman</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-rds.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">RDS</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- Monthly Prognosa Pinjaman -->
+                    <div class="ed-2-single-course mix pinjaman border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EldpX6woCF5FrYNaKduxoZQBBuLOBcJqfx1wpICEe4PlbA?e=xWNSKl" target="_blank">
+                            <img src="assets/img/Data/Pinjaman/prognosa-pinjaman.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Monthly</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EldpX6woCF5FrYNaKduxoZQBBuLOBcJqfx1wpICEe4PlbA?e=xWNSKl" target="_blank"
+                                class="hover:text-edpurple">Monthly Prognosa Pinjaman</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Pinjaman</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-rds.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">RDS</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- TRANSACTION -->
+                    <!-- Laporan Harian non Wholesales KPI -->
+                    <div class="ed-2-single-course mix transaction border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EmTBtX5hcXlEnOviIONn43wBYx5dhjDjv6x0aJHZFGIRzA?e=FgV7Cb" target="_blank">
+                            <img src="assets/img/Data/Transaction/wholesales-kpi.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EmTBtX5hcXlEnOviIONn43wBYx5dhjDjv6x0aJHZFGIRzA?e=FgV7Cb" target="_blank"
+                                class="hover:text-edpurple">Laporan Harian non Wholesales KPI</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Transaction</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-rtb.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">RTB</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- Laporan Populasi Qlola IBbiz dan Qcash -->
+                    <div class="ed-2-single-course mix transaction border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EpuAt8qZq85BgJ564B8RbKYBHCR3ToO0hZY-JTGc3h716g?e=l35LDB" target="_blank">
+                            <img src="assets/img/Data/Transaction/qlola-ibbis.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EpuAt8qZq85BgJ564B8RbKYBHCR3ToO0hZY-JTGc3h716g?e=l35LDB" target="_blank"
+                                class="hover:text-edpurple">Laporan Populasi Qlola IBbiz dan Qcash</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Transaction</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-rtb.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">RTB</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- Laporan Daily EDC & Qris -->
+                    <div class="ed-2-single-course mix transaction border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/Ethbq4sYTqJPtnoZbPGKy9oBLAfcm_rHvLjCiyBdk-yWkg?e=LzBGup" target="_blank">
+                            <img src="assets/img/Data/Transaction/edc-qris.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/Ethbq4sYTqJPtnoZbPGKy9oBLAfcm_rHvLjCiyBdk-yWkg?e=LzBGup" target="_blank"
+                                class="hover:text-edpurple">Laporan Daily EDC & Qris</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Transaction</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-eco2.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">Ecosistem 2</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- Lain-lain -->
+                    <!-- Laporan User Brimo Daily -->
+                    <div class="ed-2-single-course mix etc border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EkXDGGTKOMtDg5df1R5Ixw4Bar5Fb2viZAJ5-0aJOjr6PQ?e=7vENS8" target="_blank">
+                            <img src="assets/img/Data/Lain-lain/user-brimo.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Daily</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EkXDGGTKOMtDg5df1R5Ixw4Bar5Fb2viZAJ5-0aJOjr6PQ?e=7vENS8" target="_blank"
+                                class="hover:text-edpurple">Laporan User Brimo Daily</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Lain-lain</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-it.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">IT Departement</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- ⁠Laporan User Brimo Monthly -->
+                    <div class="ed-2-single-course mix etc border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EtYmWA3cy-REsyN2vFi-i9EBeoLRiYdYIfc888hCLcNmQA?e=kcbYVn" target="_blank">
+                            <img src="assets/img/Data/Lain-lain/user-brimo-montly.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Monthly</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EtYmWA3cy-REsyN2vFi-i9EBeoLRiYdYIfc888hCLcNmQA?e=kcbYVn" target="_blank"
+                                class="hover:text-edpurple">⁠Laporan User Brimo Monthly</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Lain-lain</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-it.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">IT Departement</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+
+                    <!-- ⁠Laporan Open Date Tabungan dan Giro Weekly -->
+                    <div class="ed-2-single-course mix etc border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+                        <!-- course image  -->
+                        <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                            <a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EjJpfKy_b9dClDHMw1GlPE4BbgDziNMJCXJMdqJNj4pyaA?e=vsexa5" target="_blank">
+                            <img src="assets/img/Data/Lain-lain/open-date-tabungan-giro.png" alt="Course Image"
+                                class="aspect-[330/223] w-full object-cover group-hover:scale-110"></a>
+                            <span
+                                class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+                                <span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+                                <span class="txt">Weekly</span>
+                            </span>
+                        </div>
+
+                        <!-- course infos -->
+
+                        <!-- course title -->
+                        <h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="https://bri2-my.sharepoint.com/:f:/g/personal/kanwiljakarta2_2_brilian_bri_co_id/EjJpfKy_b9dClDHMw1GlPE4BbgDziNMJCXJMdqJNj4pyaA?e=vsexa5" target="_blank"
+                                class="hover:text-edpurple">Laporan Open Date Tabungan dan Giro Weekly</a></h5>
+
+                        <!-- course stats -->
+                        <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+                            <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">Lain-lain</span>
+                            </div>
+                        </div>
+
+                        <!-- course footer -->
+                        <div class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+                            <!-- course author -->
+                            <div class="flex items-center gap-[8px]">
+                                <img src="assets/img/Dept/logo-eco1.png" alt="Course Author Image"
+                                    class="w-[34px] aspect-square object-cover">
+                                <a class="hover:text-edpurple">Ecosystem 1</a>
+                            </div>
+
+                            <!-- course rating -->
+                        </div>
+                    </div>
+                
+            </div>
+            </div>
+        </section>
+        <!-- COURSES SECTION END -->
+
+
+        <!-- CTA SECTION START -->
+        <section
+            class="ed-2-cta overflow-hidden bg-edpurple pt-[15px] md:pt-[40px] relative z-[1] before:absolute before:inset-0 before:bg-[url(../assets/img/cta-2-vector.png)] before:bg-center before:bg-no-repeat before:bg-cover before:-z-[1]">
+            <div id="looker" class="mx-[19.7%] xxxl:mx-[14.7%] xxl:mx-[9.7%] xl:mx-[3.2%] md:mx-[15px]">
+                <div class="flex md:flex-col gap-y-[15px] items-center justify-between">
+                    <!-- text -->
+                    <div class="max-w-[600px] md:max-w-full shrink-0 relative">
+                        <h3
+                            class="font-semibold text-[36px] sm:text-[32px] xxs:text-[28px] text-white leading-[1.4] mb-[41px] xxs:mb-[31px]">
+                            Dashboard Looker Studio - BRIMO, Qlola, EDC</h3>
+                        <a href="https://lookerstudio.google.com/embed/u/0/reporting/91df82d2-86ee-405b-9176-a25f763979e1/page/p_i4zh8hgvsd" target="_blank"
+                            class="ed-btn !h-[56px] !bg-white !text-black gap-[10px] hover:!bg-edyellow hover:!text-edblue">Link Dashboard<span class="icon"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+
+                        <!-- vector -->
+                        <img src="assets/img/cta-2-txt-vector.svg" alt="vector"
+                            class="absolute bottom-[10px] left-[37%] xs:left-[75%]">
+                    </div>
+
+                    <!-- image -->
+                    <div class="mr-[40px] lg:mr-0 relative z-[1] shrink-0">
+                        <img src="assets/img/Konten/LookerStudio.png" alt="image">
+                        <!-- vector -->
+                        <div
+                            class="aspect-square w-[386px] border-[57px] border-edyellow rounded-full absolute bottom-0 right-[25%] translate-y-[50%] -z-[1]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA SECTION END -->
+
+
+        <!-- vector -->
+        <img src="assets/img/testimonial-2-vector.svg" alt="vector"
+            class="absolute -z-[1] pointer-events-none left-[44px] bottom-[60px]">
+        </section>
+        <!-- TESTIMONIAL SECTION END -->
+
+
+        <!-- STATS SECTION START -->
+        <!-- STATS SECTION END -->
+
+
+        <!-- CTA 2 SECTION START -->
+        <!-- CTA 2 SECTION END -->
+
+        <!-- partners -->
+    </main>
+
+    <!-- js -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/fslightbox/fslightbox.js"></script>
+    <script src="assets/vendor/mixitup/mixitup.min.js"></script>
+    <script src="assets/vendor/slim-select/slimselect.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/header-2.js"></script> -->
+    <script src="assets/js/accordion.js"></script>
+</body>
+
+</html>
